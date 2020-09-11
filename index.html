@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" manifest="manifest.appcache">
+<head>
+    <meta charset="UTF-8">
+    <html manifest="demo.appcache"></html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherapp</title>
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+	<script src="/scripts/jquery.min.js"></script>
+	<script src="/scripts/popper.min.js"></script>
+	<script src="/scripts/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="/scripts/index.js"></script>
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+    <nav class="navbar bg-light navbar-light navbar-expand-lg">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="image/logo.png" class='.img-fluid. max-width: 100%; height: auto;' alt="Weatherapplogo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Cities</a></li>
+                    <li class="nav-item"><a href="add.html" class="nav-link">Add</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div>
+            <div class="city-name text-center" id='city'>Abuja</div>
+            <div class="text-center" id='date'>Wed, September 9 2.19pm</div>
+            <div class="text-center">
+                <img id='main_icon' src="image/icons8-cloud-48.png" class='.img-fluid. max-width: 100%; height: auto;' alt="cloud">
+            </div>
+            <div class="text-center temp-value">
+                <div><span id='temp'></span><sup>o</sup>F</div>
+            </div>
+            <div class="text-center" id='description' >Partly sunny</div>
+        </div>
+
+        <!-- Hourly -->
+        <div>
+            <p>Hourly</p>
+            <hr>
+            <div class="row text-center">
+                <div class="col-md-2">
+                    <div>
+                        <img class='.img-fluid. max-width: 100%; height: auto;' id='hourly-img-1' src="image/icons8-24.png" alt="small cloud">
+                    </div>
+                    <div id='hourly-name-1'>3PM</div>
+                </div>
+                <div class="col-md-2">
+                    <div>
+                        <img class='.img-fluid. max-width: 100%; height: auto;' id='hourly-img-2' src="image/icons8-24.png" alt="small cloud">
+                    </div>
+                    <div id='hourly-name-2'>7PM</div>
+                </div>
+                <div class="col-md-2">
+                    <div>
+                        <img class='.img-fluid. max-width: 100%; height: auto;' id='hourly-img-3' src="image/icons8-24.png" alt="small cloud">
+                    </div>
+                    <div id='hourly-name-3'>11PM</div>
+                </div>
+                <div class="col-md-2">
+                    <div>
+                        <img class='.img-fluid. max-width: 100%; height: auto;' id='hourly-img-4' src="image/icons8-24.png" alt="small cloud">
+                    </div>
+                    <div id='hourly-name-4'>3AM</div>
+                </div>
+                <div class="col-md-2">
+                    <div>
+                        <img class='.img-fluid. max-width: 100%; height: auto;' id='hourly-img-5' src="image/icons8-24.png" alt="small cloud">
+                    </div>
+                    <div id='hourly-name-5'>7AM</div>
+                </div>
+                <div class="col-md-2">
+                    <div>
+                        <img class='.img-fluid. max-width: 100%; height: auto;' id='hourly-img-6' src="image/icons8-24.png" alt="small cloud">
+                    </div>
+                    <div id='hourly-name-6'>11AM</div>
+                </div>
+            </div>
+        </div>
+        <!-- End Hourly -->
+
+        <!-- Daily -->
+        <div>
+            <p>Daily</p>
+            <hr>
+            <div class="row text-center">
+                <div class="col-md-2">
+                    <div>
+                        <img class='.img-fluid. max-width: 100%; height: auto;' id='daily-img-1' src="image/icons8-24.png" alt="small cloud">
+                    </div>
+                    <div id='daily-label-1' >Today</div>
+                </div>
+                <div class="col-md-2">
+                    <div>
+                        <img class='.img-fluid. max-width: 100%; height: auto;' id='daily-img-2' src="image/icons8-24.png" alt="small cloud">
+                    </div>
+                    <div id='daily-label-2'>Thur</div>
+                </div>
+                <div class="col-md-2">
+                    <div>
+                        <img class='.img-fluid. max-width: 100%; height: auto;' id='daily-img-3' src="image/icons8-24.png" alt="small cloud">
+                    </div>
+                    <div id='daily-label-3'> Fri</div>
+                </div>
+                <div class="col-md-2">
+                    <div>
+                        <img class='.img-fluid. max-width: 100%; height: auto;' id='daily-img-4' src="image/icons8-24.png" alt="small cloud">
+                    </div>
+                    <div id='daily-label-4'>Sat</div>
+                </div>
+                <div class="col-md-2">
+                    <div>
+                        <img class='.img-fluid. max-width: 100%; height: auto;' id='daily-img-5' src="image/icons8-24.png" alt="small cloud">
+                    </div>
+                    <div id='daily-label-5'> Sun</div>
+                </div>
+                <div class="col-md-2">
+                    <div>
+                        <img class='.img-fluid. max-width: 100%; height: auto;' id='daily-img-6' src="image/icons8-24.png" alt="small cloud">
+                    </div>
+                    <div id='daily-label-6'>Mon</div>
+                </div>
+            </div>
+        </div>
+        <!-- End Daily -->
+
+        <div class="row text-center before-footer">
+            <div class="col-md-6">
+                <div>
+                    Chance of rain
+                </div>
+                <div>
+                    <span id='pop'>46%</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    UV index
+                </div>
+                <div>
+                    <span id='uvi'>Extreme</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="" alt="">
+                Weatherapp
+            </div>
+            <div class="text-right col-md-6">Updated</div>
+        </div>
+
+
+    </div>
+    </body>
+</html>

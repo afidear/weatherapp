@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" manifest="manifest.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherapp - Add City</title>
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+	<script src="/scripts/jquery.min.js"></script>
+	<script src="/scripts/popper.min.js"></script>
+	<script src="/scripts/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="/scripts/index.js"></script>
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+    
+    <nav class="navbar bg-light navbar-light navbar-expand-lg">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="image/logo.png" alt="Weatherapplogo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="cities.html" class="nav-link">Cities</a></li>
+                    <li class="nav-item"><a href="add.html" class="nav-link">Add</a></li>
+                    <li class="nav-item"><a href="settings.html" class="nav-link">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Find City</h1>
+        <div class="row">
+            <input id="cityname" type="text" list="cities" placeholder="search city">
+            <datalist id='cities'>
+                
+            </datalist>
+        </div>
+    </div>
+
+    
+</body>
+</html>

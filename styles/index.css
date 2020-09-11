@@ -1,0 +1,36 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    columns: #616971;
+    /* background-color: lightskyblue; */
+}
+
+/*top bar hearder*/
+
+.top-bar{
+    background-color: #7aaec4;
+    height:2.8rem;
+    padding:.5rem 0;
+}
+
+.top-bar a{
+    color:white;
+    text-decoration: none;
+    font-size:1.1rem;
+}
+
+.navbar-brand img{
+    height: 3rem;
+    
+}
+.temp-value{
+    font-size: 3rem;
+}
+
+.city-name{
+    font-size: 1.5rem;
+}
+
+.before-footer{
+    padding: 3rem 0rem;
+}

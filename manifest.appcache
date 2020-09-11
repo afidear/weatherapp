@@ -1,0 +1,24 @@
+CACHE MANIFEST
+# v1.0 : 10-09-2020
+ 
+CACHE:
+# pages
+index.html
+add.html
+ 
+# styles & scripts
+styles/index.css
+styles/bootstrap.min.css
+scripts/index.js
+scripts/bootstrap.min.js
+scripts/jquery.min.js
+scripts/popper.min.js
+ 
+# images
+/image/logo.png
+/image/icons8-24.png
+/image/icons8-cloud-48.png
+ 
+ 
+FALLBACK:
+index.html
